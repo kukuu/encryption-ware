@@ -1,6 +1,4 @@
 ## Password Authentication with Mongoose : Account Locking
-.......................................................
-
 
 
 This task focuses on implementing secure username/password authentication for your Mongoose User models with bcrypt.  Here  we'll discuss how to prevent brute-force attacks by enforcing a maximum number of failed login attempts.
