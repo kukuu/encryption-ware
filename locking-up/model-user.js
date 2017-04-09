@@ -1,4 +1,4 @@
-//Purpose - implementing-max-login-attempts-with-mongoose
+//Purpose - implementing max login attempts with mongoose
 //Author - Alexander Adu-Sarkodie
 // Date - March 2016
 
