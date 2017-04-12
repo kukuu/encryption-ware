@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>React - A navigation menu.</title> 
+  <script type='text/javascript' src="http://fb.me/react-0.10.0.min.js"></script>
+  <script type='text/javascript' src="http://fb.me/JSXTransformer-0.10.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/1.css">
+  <script type="application/javascript;version=1.7" language="JavaScript 1.7">//<![CDATA[
+
+/** @jsx React.DOM */
+
+    var mnsMenu = React.createClass({
+
+        getInitialState: function(){
+            return { focused: 0 };
+        },
+
+        clicked: function(index){
+
+            // The click handler will update the state with
+            // the index of the focused menu entry
+
+            this.setState({focused: index});
+        },
+
+        render: function() {
+
+            // Here we will read the items property, which was passed
+            // as an attribute when the component was created
+
+            var self = this;
+
+            // The map method will loop over the array of menu entries,
+            // and will return a new array with <li> elements.
+
+            return (
+                <div>
+                    <ul>{ this.props.items.map(function(m, index){
+            
+                        //picking up style. set initial state to empty or null will be //returned with state (change) used
+
+                        var style = '';
+            
+                        if(self.state.focused == index){
+                            style = 'focused';
+                        }
+            
+                        // Notice the use of the bind() method. It makes the
+                        // index available to the clicked function:
+            
+                        return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
+            
+                    }) }
+                            
+                    </ul>
+                    
+                    <p>Selected: {this.props.items[this.state.focused]}</p>
+                </div>
+            );
+
+        }
+    });
+
+    // Render the menu component on the page, and pass an array with menu options
+
+    React.renderComponent(
+        <mnsMenu items={ ['INSPIRE ME', 'WOMEN', 'LINGERIE', 'BEAUTY','MEN','KIDS','HOME & FURNITURE','FOOD & WINE','FLOWERS & GIFTS','OFFERS','M&S BANK'] } />,
+        document.body
+    );
+ 
+//]]> 
+</script>
+
+
+</head>
+<body>
+  <script src="http://fb.me/react-js-fiddle-integration.js"></script>
+  
+</body>
+
+
+</html>
+

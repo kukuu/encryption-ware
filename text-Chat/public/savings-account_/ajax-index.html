@@ -1,0 +1,48 @@
+<!-- http://jsfiddle.net/aethawalka/bzLj35wv/ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <style type="text/css">
+    h1 { font-weight: bold; display: block; margin-bottom: 0.5em; }
+  </style>
+
+  <title>Alexander Adu-Sarkodie</title>
+
+
+<script type='text/javascript'>
+$(function(){
+    var jsonData = {
+        "text1" : "textData1",
+        "text2" : "textData2"
+    };
+
+    $.ajax({
+      type: 'POST',
+      dataType: 'json',
+      url: '/echo/json/',
+      data : { json: JSON.stringify( jsonData ) },
+      success: function(data) {
+        $('#ajax').append(data.text1).append( ['<br/>', data.text2].join('') );
+      }  
+    });
+});
+
+</script>
+
+  
+</head>
+
+<body>
+  <h1>Mocking AJAX on jsfiddle</h1>
+
+<div id="ajax"></div>
+  
+</body>
+
+</html>
+

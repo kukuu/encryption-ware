@@ -1,0 +1,33 @@
+{
+  "name": "text-chat",
+  "version": "0.0.0",
+  "description": "A run time live Text Chat Application written in REACT.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kukuu"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "Alexander Adu-Sarkodie",
+  "bugs": {
+    "url": "aadusarkodie1@gmail.com"
+  },
+  "homepage": "http://goldhawk-college.com/istudio/profile.html",
+  "engines" : {
+    "node" : "0.12.x"
+  }
+}

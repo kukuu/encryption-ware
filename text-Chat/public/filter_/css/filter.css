@@ -1,0 +1,20 @@
+   body {
+      width:960px;
+      margin:0 auto;
+      /*background: url(../images/lloyds-logo.jpeg);*/
+	  background-position: 53% -6%;
+	  background-repeat: no-repeat;
+    }
+
+    table tr:nth-child(even) {
+         background-color: #f9fbd0;
+         width:100%;
+    }
+    table {
+    	margin-top: 20px;
+    	width:100%;
+    }
+
+    h1 {
+		color: #0e5941;
+	}
