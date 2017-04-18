@@ -1,0 +1,67 @@
+{
+	"_id" : ObjectId("58d13e0c79d69f0c932b6937"),
+	"email" : "ian@berrybus.io",
+	"password" : "$2a$10$OmRG5Fehm3JxSuX8H7vpJ.Meo4VjIJAkx7v8bHyo7zEAe8jPkDqO2",
+	"name" : "Ian",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58da736e9a816faa1c81c17e"),
+	"fullName" : "Ian",
+	"email" : "alex.adu-sarkodie@berrytech.io",
+	"phone" : "07817094075",
+	"countryCode" : "44",
+	"password" : "$2a$10$gFnxfqx/sF84Xb3lu4DUzOxF5cfJNAcL8mpdyOHL/waotrWUtCa0.",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58da74749a816faa1c81c183"),
+	"fullName" : "hugo",
+	"email" : "alex.adu-sarkodie@berrytech.io",
+	"phone" : "7817094075",
+	"countryCode" : "44",
+	"password" : "$2a$10$DFRwbQdzvTQN0J9kJbaYiuiR07eBV.beyeMMIims1JA/eYxRGX4zO",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58da793d9a816faa1c81c187"),
+	"fullName" : "Jake Newman",
+	"email" : "jake.newman@berrytech.io",
+	"phone" : "89013245",
+	"countryCode" : "44",
+	"password" : "$2a$10$eK0jDz84Z5CX5LBYWlCL.e6ViG2l4QqPMcB/5IMXh1AW6Rb2p0shK",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dbd41cda2c87bc773d7392"),
+	"fullName" : "malcom reynolds",
+	"email" : "m.renolds@berrytech.io",
+	"phone" : "07817094075",
+	"countryCode" : "44",
+	"password" : "$2a$10$GDRwmwt9VO9jihJug9Ab7eQFX7alo1TiuqrzQisDi8Z0LpQ.pEQsK",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dcff742af3c2c0eacf840e"),
+	"fullName" : "Tony",
+	"email" : "alex.adu-sarkodie@berrytech.io",
+	"phone" : "7817094075",
+	"countryCode" : "44",
+	"password" : "$2a$10$eTQVIqqRelLXsRezoB6PWuYt7iFfiH/8TjTgmbOMb6xHZvO55YkyS",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58e38d25dc531ef1eae13999"),
+	"fullName" : "Misha",
+	"email" : "misha@berrytech.io",
+	"phone" : "07817094001",
+	"countryCode" : "44",
+	"password" : "$2a$10$zToS5jzLhg8QvRz0Kxqv2ul0CxH2cayz.z84LRQ3gUeitCvihsWou",
+	"authyStatus" : "unverified",
+	"__v" : 0
+}

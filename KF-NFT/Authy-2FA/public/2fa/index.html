@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kingfisher 2FA</title>
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="/app.js"></script>
+    
+    <link href="http://localhost:3000/orgional/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="http://localhost:3000/orgional/css/styles.css" type="text/css" rel="stylesheet" />
+      <style>
+
+
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        h1, h3, .error-message {
+          text-align: center;
+          font-weight: normal;
+        }
+
+       
+
+        .form-group p, 
+        h6,
+        .user-email {
+            text-align: center;
+        }
+
+        .panel {
+            border: none;;
+        }
+    </style>
+
+</head>
+<body ng-app="authyDemo">
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Network Forensic tool by Berry Technologies</a>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container twofa" ng-controller="AuthyController">
+        <h1 className="card-heading" style="margin-top: 90px;">Kingfisher</h1>
+        <h3>INTELLIGENT NETWORK SECURITY</h3>
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-1 col-md-offset-3">
+                <div class="panel panel-default" style="width: 150%">
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                    <h6>AUTHENTICATION CODE</h6>
+                                    <p>Enter the 6 digit code provided by your 2FA device</p>
+                                        <input type="text" name="token" id="token" class="form-control input-sm"
+                                               ng-model="setup.token"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                               <!-- <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <input type="submit" value="SMS"  ng-click="sms()" class="btn btn-info btn-block" style="float: right;">
+                                </div>
+                                 <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <input type="submit" value="Voice"  ng-click="voice()" class="btn btn-info btn-block">
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <input type="submit" value="OneTouch"  ng-click="onetouch()" class="btn btn-primary btn-block">
+                                </div></div> -->
+                                <p class="user-email"><small>user email</small></p>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <input type="submit" value="Verify"  ng-click="verify()" class="btn btn-success" style="float: right;width:80px;" >
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div className="container">
+              <div class="navbar navbar-inner  navbar-fixed-bottom">
+                <p class="muted credit">Copyright @2017 - Kingfisher</p>
+              </div>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>
