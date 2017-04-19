@@ -1,0 +1,838 @@
+{
+  "searchTerms": "Music &amp; The Arts",
+  "searchURL": "https://www.donorschoose.org/donors/search.html?subject1=-1&utm_source=api&utm_medium=feed&utm_content=searchlink&utm_campaign=DONORSCHOOSE",
+  "totalProposals": "2958",
+  "index": "0",
+  "max": "10",
+  "breadcrumb": [[
+    "subject1",
+    "-1",
+    "Music &amp; The Arts"
+  ]],
+  "proposals": [
+    {
+      "id": "2377627",
+      "proposalURL": "https://www.donorschoose.org/project/for-the-love-of-art/2377627/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2377627&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u11059_sm.jpg?timestamp=1469306220571",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u11059_retina.jpg?timestamp=1469306220571",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u11059_thmb.jpg?timestamp=1469306220571",
+      "title": "For The Love Of Art",
+      "shortDescription": "Welcome to first grade! I have twenty-four wonderful students who are so eager to learn. They are curious and devour all the information they are learning. They are learning to work as teams,...",
+      "fulfillmentTrailer": "My students need art supplies such as block printing ink, collage pieces, acrylic paint and chalk to integrate art into social studies, science and reading.",
+      "snippets": [],
+      "percentFunded": "78",
+      "numDonors": "15",
+      "costToComplete": "222.47",
+      "studentLed": false,
+      "numStudents": "24",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "999.92",
+      "freeShipping": "false",
+      "teacherId": "11059",
+      "teacherName": "Ms. Morfin",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 21,
+          "name": "Head Start"
+        }
+      ],
+      "schoolName": "Maria Saucedo Scholastic Academy",
+      "schoolUrl": "https://www.donorschoose.org/school/maria-saucedo-schoololastic-acad/5666/",
+      "city": "Chicago",
+      "zip": "60623-3519",
+      "state": "IL",
+      "stateFullName": "Illinois",
+      "latitude": "41.848010000000000",
+      "longitude": "-87.696243000000000",
+      "zone": {
+        "id": "201",
+        "name": "Illinois (Chicago)"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-04-22",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2496063",
+      "proposalURL": "https://www.donorschoose.org/project/video-broadcasting-here-we-come/2496063/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2496063&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u4031278_sm.jpg?timestamp=1491429986321",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u4031278_retina.jpg?timestamp=1491429986321",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u4031278_thmb.jpg?timestamp=1491429986321",
+      "title": "Video Broadcasting- Here We Come!",
+      "shortDescription": "Third graders in our class community are dynamic, friendly, and very curious. They care about each other and are sensitive to global events and want to make their mark. Each activity we experience...",
+      "fulfillmentTrailer": "My students need current technology and video equipment in order to get real-world experiences with video broadcasting. These items will help our classroom set up a space for students to explore the world of film-making!",
+      "snippets": [],
+      "percentFunded": "93",
+      "numDonors": "18",
+      "costToComplete": "92.93",
+      "studentLed": false,
+      "numStudents": "24",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "1276.87",
+      "freeShipping": "true",
+      "teacherId": "4031278",
+      "teacherName": "Ms. Malm",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "High Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 3,
+        "name": "Special Education"
+      }],
+      "schoolName": "Jordan Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/jordan-elementary-school/27573/",
+      "city": "Whittier",
+      "zip": "90603-2982",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "33.938555000000000",
+      "longitude": "-117.980716000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "1",
+        "name": "Performing Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2017-08-05",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2377573",
+      "proposalURL": "https://www.donorschoose.org/project/starving-artists/2377573/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2377573&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u235437_sm.jpg?timestamp=1492573147306",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u235437_retina.jpg?timestamp=1492573147306",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u235437_thmb.jpg?timestamp=1492573147306",
+      "title": "Starving Artists",
+      "shortDescription": "My students attend a Title 1 public school in the third largest district in the country, Chicago. Unfortunately, my school district is underfunded and many schools, like mine, are left with only...",
+      "fulfillmentTrailer": "We need art material to help us foster our creativity and grow as artists.",
+      "snippets": [],
+      "percentFunded": "72",
+      "numDonors": "25",
+      "costToComplete": "365.51",
+      "studentLed": true,
+      "numStudents": "90",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "1286.24",
+      "freeShipping": "false",
+      "teacherId": "235437",
+      "teacherName": "Mr. Gutierrez",
+      "gradeLevel": {
+        "id": "3",
+        "name": "Grades 6-8"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 11,
+          "name": "U.S. Cellular teacher"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 17,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Horace Greeley Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/horace-greeley-elementary-school/5592/",
+      "city": "Chicago",
+      "zip": "60613-3096",
+      "state": "IL",
+      "stateFullName": "Illinois",
+      "latitude": "41.952851000000000",
+      "longitude": "-87.650233000000000",
+      "zone": {
+        "id": "201",
+        "name": "Illinois (Chicago)"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "22",
+        "name": "Foreign Languages",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-04-22",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2378116",
+      "proposalURL": "https://www.donorschoose.org/project/google-chromebooks-for-the-art-room/2378116/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2378116&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u185858_sm.jpg?timestamp=1465065866516",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u185858_retina.jpg?timestamp=1465065866516",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u185858_thmb.jpg?timestamp=1465065866516",
+      "title": "Google Chromebooks for the Art Room",
+      "shortDescription": "My students are in grades fourth through eighth, 100% qualify for free lunch; a large amount of my students are or were English Language Learners. My school also has a large refugee population...",
+      "fulfillmentTrailer": "My students need three Google Chromebooks, and licenses for our art classroom.",
+      "snippets": [],
+      "percentFunded": "69",
+      "numDonors": "7",
+      "costToComplete": "238.51",
+      "studentLed": false,
+      "numStudents": "800",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "765.51",
+      "freeShipping": "true",
+      "teacherId": "185858",
+      "teacherName": "Mrs. Rai",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [{
+        "id": 12,
+        "name": "Horace Mann (partner)"
+      }],
+      "schoolName": "Challenger Middle School",
+      "schoolUrl": "https://www.donorschoose.org/school/challenger-middle-school/54686/",
+      "city": "Glendale",
+      "zip": "85303",
+      "state": "AZ",
+      "stateFullName": "Arizona",
+      "latitude": "33.530974164605141",
+      "longitude": "-112.207645252346990",
+      "zone": {
+        "id": "421",
+        "name": "Arizona"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2017-04-22",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2450937",
+      "proposalURL": "https://www.donorschoose.org/project/colors-of-the-world-art-supplies/2450937/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2450937&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u4063011_sm.jpg?timestamp=1486926735850",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u4063011_retina.jpg?timestamp=1486926735850",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u4063011_thmb.jpg?timestamp=1486926735850",
+      "title": "Colors of the World Art Supplies",
+      "shortDescription": "Welcome to room 209! We are an Life Skills class, servicing grades K-2. We are a school, with full free and reduced lunches/breakfast. We are a classroom of many different needs, from very basic...",
+      "fulfillmentTrailer": "My students need a variety of hands on manipulatives (teaching cart, drying rack, color maze) to enhance learning, arts and crafts are a fun and engaging teaching tool!",
+      "snippets": [],
+      "percentFunded": "79",
+      "numDonors": "12",
+      "costToComplete": "125.26",
+      "studentLed": false,
+      "numStudents": "11",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "595.26",
+      "freeShipping": "true",
+      "teacherId": "4063011",
+      "teacherName": "Ms. Ribarchik",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 21,
+          "name": "Head Start"
+        },
+        {
+          "id": 17,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Horatio B Hackett Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/horatio-b-hackett-elementary-school/90825/",
+      "city": "Philadelphia",
+      "zip": "19125-2199",
+      "state": "PA",
+      "stateFullName": "Pennsylvania",
+      "latitude": "39.980972000000000",
+      "longitude": "-75.126854000000000",
+      "zone": {
+        "id": "113",
+        "name": "Pennsylvania"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-06-13",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2380606",
+      "proposalURL": "https://www.donorschoose.org/project/fiber-art-fun/2380606/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2380606&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u676779_sm.jpg?timestamp=1475693898842",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u676779_retina.jpg?timestamp=1475693898842",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u676779_thmb.jpg?timestamp=1475693898842",
+      "title": "Fiber Art Fun!",
+      "shortDescription": "We are located in a high poverty/low income area in Kentucky. Our neighborhood is (sadly) known for having more violent crime than any other location in the entire state. As a school we began...",
+      "fulfillmentTrailer": "My students need supplies to create visual fiber art! The yarn, needles, fabric, felt, paint and lacing materials will help my students to create different types of visual art!",
+      "snippets": [],
+      "percentFunded": "70",
+      "numDonors": "5",
+      "costToComplete": "120.35",
+      "studentLed": false,
+      "numStudents": "550",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "396.18",
+      "freeShipping": "false",
+      "teacherId": "676779",
+      "teacherName": "Ms. Gordon",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 21,
+          "name": "Head Start"
+        },
+        {
+          "id": 17,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Mill Creek Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/mill-creek-elementary-school/58236/",
+      "city": "Louisville",
+      "zip": "40216-4145",
+      "state": "KY",
+      "stateFullName": "Kentucky",
+      "latitude": "38.195740000000000",
+      "longitude": "-85.805860000000000",
+      "zone": {
+        "id": "211",
+        "name": "Kentucky"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-04-27",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2523565",
+      "proposalURL": "https://www.donorschoose.org/project/help-my-pre-k-class-with-new-art-supplie/2523565/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2523565&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u3735960_sm.jpg?timestamp=1470772112784",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u3735960_retina.jpg?timestamp=1470772112784",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u3735960_thmb.jpg?timestamp=1470772112784",
+      "title": "Help My Pre-K Class with New ART Supplies!",
+      "shortDescription": "My young students are three and four-year-old children and they come to school for a half-day. I have two classes of students, an a.m. class and a p.m. class. The students are very nervous when...",
+      "fulfillmentTrailer": "My students need art and school supplies like paint, pencils, paper, glue sticks, crayons, scissors and more, to make projects in class!",
+      "snippets": [],
+      "percentFunded": "52",
+      "numDonors": "9",
+      "costToComplete": "418.73",
+      "studentLed": false,
+      "numStudents": "30",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "PNC17",
+        "ownerRegion": "",
+        "name": "PNC Grow Up Great®",
+        "donorSalutation": "PNC Grow Up Great®",
+        "type": "AUTO_DONATION_MATCH",
+        "logoURL": "https://cdn.donorschoose.net/images/logos/pnc_growupgreat_135.jpg",
+        "faqURL": "https://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=PNC17",
+        "amount": "0.00",
+        "description": "<p align=\"center\"><img src=\"https://cdn.donorschoose.net/images/logos/pnc_growupgreat_135.jpg\"><\/p>\r\n<p>Donations to this project are now being matched, thanks to support from PNC Grow Up Great®. This is part of our mission to extend the reach of innovative, high-quality resources and experiences in pre-K classrooms through partnering with donors like you.<\/p>\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=1219\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "868.73",
+      "freeShipping": "true",
+      "teacherId": "3735960",
+      "teacherName": "Mrs. Purdy",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 17,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Ridgely Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/ridgely-elementary-school/29335/",
+      "city": "Springfield",
+      "zip": "62702-1799",
+      "state": "IL",
+      "stateFullName": "Illinois",
+      "latitude": "39.827898000000000",
+      "longitude": "-89.644447000000000",
+      "zone": {
+        "id": "202",
+        "name": "Illinois (State)"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-08-05",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2527015",
+      "proposalURL": "https://www.donorschoose.org/project/art-in-humanities-ipads-for-video-produ/2527015/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2527015&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u1191208_sm.jpg?timestamp=1461168892230",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u1191208_retina.jpg?timestamp=1461168892230",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u1191208_thmb.jpg?timestamp=1461168892230",
+      "title": "Art in Humanities: iPads for Video Production in Geography Class",
+      "shortDescription": "My students are a creative group. They love making videos and creating projects. So far, we have been confined to the abilities of our own individual smart phones and media devices. Having a set...",
+      "fulfillmentTrailer": "My students need 2 more iPads to complete our class set! These iPads will allow us to record and edit video projects in World Geography class.",
+      "snippets": [],
+      "percentFunded": "93",
+      "numDonors": "1",
+      "costToComplete": "70.51",
+      "studentLed": false,
+      "numStudents": "120",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "April 19",
+        "code": "LIFTOFF",
+        "matchingKey": "teachProm8P",
+        "ownerRegion": "National",
+        "name": "Matching Donor",
+        "donorSalutation": "The DonorsChoose.org Community",
+        "type": "PROMO",
+        "logoURL": "liftoff.gif",
+        "description": ""
+      },
+      "totalPrice": "1070.51",
+      "freeShipping": "true",
+      "teacherId": "1191208",
+      "teacherName": "Mr. Pepin",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 1,
+          "name": "Charter"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        }
+      ],
+      "schoolName": "Liberty Charter High School",
+      "schoolUrl": "https://www.donorschoose.org/school/liberty-charter-high-school/100562/",
+      "city": "Lemon Grove",
+      "zip": "91945",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "32.734272003173828",
+      "longitude": "-117.036308288574220",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "9",
+        "name": "History &amp; Geography",
+        "groupId": "3"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2017-08-09",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2379196",
+      "proposalURL": "https://www.donorschoose.org/project/lamination-makes-it-last/2379196/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2379196&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u2189587_sm.jpg?timestamp=1389660921810",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u2189587_retina.jpg?timestamp=1389660921810",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u2189587_thmb.jpg?timestamp=1389660921810",
+      "title": "Lamination Makes It Last",
+      "shortDescription": "My students are hard workers at an urban inner city school. All of our students get free breakfast and lunch. More than half of my students come from families where English is not the first...",
+      "fulfillmentTrailer": "My students need laminating sheets so that their projects work and centers last.",
+      "snippets": [],
+      "percentFunded": "40",
+      "numDonors": "8",
+      "costToComplete": "118.49",
+      "studentLed": false,
+      "numStudents": "30",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "",
+        "ownerRegion": "",
+        "name": "",
+        "donorSalutation": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "196.49",
+      "freeShipping": "true",
+      "teacherId": "2189587",
+      "teacherName": "Ms. Shields",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 17,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Stephen Foster IPS 67",
+      "schoolUrl": "https://www.donorschoose.org/school/stephen-foster-school-367/19545/",
+      "city": "Indianapolis",
+      "zip": "46222-3327",
+      "state": "IN",
+      "stateFullName": "Indiana",
+      "latitude": "39.790355682373047",
+      "longitude": "-86.208854675292969",
+      "zone": {
+        "id": "203",
+        "name": "Indiana"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-04-24",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "2492740",
+      "proposalURL": "https://www.donorschoose.org/project/interactive-games-for-homework/2492740/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=2492740&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "https://storage.donorschoose.net/dc_prod/images/user/small/u3445242_sm.jpg?timestamp=1481476711431",
+      "retinaImageURL": "https://storage.donorschoose.net/dc_prod/images/user/retina/u3445242_retina.jpg?timestamp=1481476711431",
+      "thumbImageURL": "https://storage.donorschoose.net/dc_prod/images/user/thumbnail/u3445242_thmb.jpg?timestamp=1481476711431",
+      "title": "Interactive Games for Homework!",
+      "shortDescription": "My students are excited to learn, curious about the world around them, and love to work with each other. They come from a variety of backgrounds. My students are wonderful listeners and learners,...",
+      "fulfillmentTrailer": "My students need Tiggly interactive word kits to take home and practice their literacy skills in a fun and engaging way.",
+      "snippets": [],
+      "percentFunded": "44",
+      "numDonors": "3",
+      "costToComplete": "123.56",
+      "studentLed": false,
+      "numStudents": "24",
+      "professionalDevelopment": false,
+      "matchingFund": {
+        "matchingKey": "GATESREP17",
+        "ownerRegion": "",
+        "name": "Bill &amp; Melinda Gates Foundation",
+        "donorSalutation": "The Bill &amp; Melinda Gates Foundation",
+        "type": "AUTO_DONATION_MATCH",
+        "logoURL": "https://cdn.donorschoose.net/images/logos/gates_small.gif",
+        "faqURL": "https://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=GATESREP17",
+        "amount": "0.00",
+        "description": "<p align=\"center\"><img src=\"https://cdn.donorschoose.net/images/logos/gates_small.gif\"><\/p>\r\n<p>Donations to this project are now being matched, thanks to support from Bill & Melinda Gates Foundation. The Gates Foundation is excited to support teachers learning from one of the best resources out there - their fellow teachers. This family engagement idea was inspired by the work of other educators and adapted for this unique classroom.<\/p>\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=1202\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "221.51",
+      "freeShipping": "true",
+      "teacherId": "3445242",
+      "teacherName": "Mrs. Morgan",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        }
+      ],
+      "schoolName": "Cowden Elementary School",
+      "schoolUrl": "https://www.donorschoose.org/school/cowden-elementary-school/76908/",
+      "city": "Springfield",
+      "zip": "65807-3693",
+      "state": "MO",
+      "stateFullName": "Missouri",
+      "latitude": "37.160996000000000",
+      "longitude": "-93.285995000000000",
+      "zone": {
+        "id": "223",
+        "name": "Missouri"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2017-07-31",
+      "fundingStatus": "needs funding"
+    }
+  ]
+}
