@@ -1,0 +1,119 @@
+.vc a {
+          text-decoration: :none;
+          width: 180px;
+          display: block;
+        }
+
+      .vc a:link {
+            text-decoration: none;
+        }
+
+       .vc  a:visited {
+            text-decoration: none;
+        }
+
+      .vc  ul li {
+          display: inline-block;
+          padding-right: 20px;
+          cursor: :hover;
+        }
+        
+      .vc   h1 {
+            width:230px;
+        }
+
+       .vc  ul li {
+          display: inline-block;
+          padding: 5px;
+        }
+
+
+      .vc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+      .vc li {
+            float: left;
+            border-bottom:none;
+            border-bottom-width: 0;
+            margin: 3px 3px 0px 3px;
+            padding: 5px 5px 0px 5px;
+            background-color: #CCC;
+            color: #696969;
+            width: 184px;
+            /*font-size: 1.2em;*/
+            font-weight: bold;
+        }
+    .vc #mainView {
+            border: 1px solid black;
+          clear: both;
+          /*padding: 0 1em;*/
+        }
+    .vc .active {
+            background-color: #fff;
+            color: #000;
+        }
+
+      .vc #mainView ,.vc #viewOne {
+            background-color: #fff;
+        }
+
+       .vc .thumb-icon {
+            float:left; 
+            margin-right:15px;
+        }
+
+        .vc .thumb-icon img {
+            margin: 20px 0 0 20px;
+        }
+
+        .vc .summary {
+            float:left;
+            width:55%;
+        }
+
+        .vc .episode-suummary {
+            clear:both;
+            width: 380px;
+        }
+        .vc .episode-features  h1,
+        .vc .episode-features  span,
+        .vc .new-episode {
+             float:left;
+        }
+
+        .vc .episode-features  h1 {
+             margin-bottom: 0;
+        }
+
+        .vc .duration {
+            margin-top:23px;
+            padding-left:20px;
+        }
+        .vc .icons,
+        .vc .ad, 
+        .vc .new-episode  {
+            padding:8px;
+            background-color: red;
+            color: #fff;
+        }
+
+        .vc .icons {
+            margin-left:20px;
+        }
+        .vc .new-episode {
+            margin-top:15px;
+        }
+
+        .vc p {
+          padding-top: 10px;
+          width:370px;
+        }
+
+        .vc .tab-content {
+            clear: both;
+            padding-top: 15px;
+        }
+
+        

@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+    
+  <style type="text/css">
+    @import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+  </style>
+
+  <title>AngularJS client side pagination module example by Cacodaemon</title>
+
+  
+</head>
+
+<body ng-app="examplePaginator">
+  <body>
+
+  <div class="container" ng-controller="TestCrtl">
+      <!-- <h1>AngularJS client side pagination module example</h1>
+      <h2><a target="_blank" href="http://www.cacodaemon.de/">by cacodaemon.de</a></h2> -->
+      <table class="table table-bordered table-condensed">
+          <thead>
+              <tr>
+                  <td>Value<td>
+              </tr>
+          </thead>
+          <tbody>
+              <tr ng-repeat="value in testValues | paginate:rowsPerPage">
+                  <td>{{value}}</td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td>
+                      <div class="control-group">
+                          <label class="control-label" for="rows-per-page">Rows per page</label>
+                          <div class="controls">
+                            <select id="rows-per-page" ng-model="rowsPerPage" class="input-xlarge">
+                              <option>10</option>
+                              <option>20</option>
+                              <option>50</option>
+                            </select>
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <paginator></paginator>
+                  </td>
+              </tr>
+          </tfoot>
+      </table>
+  </div>
+</body>
+  
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+/*
+ * A simple client side pagination module.
+ *
+ * By Guido Krömer <mail@cacodaemon.de>
+ * */
+angular.module('caco.ClientPaginate', [])
+
+    .filter('paginate', function(Paginator) {
+        return function(input, rowsPerPage) {
+            if (!input) {
+                return input;
+            }
+
+            if (rowsPerPage) {
+                Paginator.rowsPerPage = rowsPerPage;
+            }
+            
+            Paginator.itemCount = input.length;
+
+            return input.slice(parseInt(Paginator.page * Paginator.rowsPerPage), parseInt((Paginator.page + 1) * Paginator.rowsPerPage + 1) - 1);
+        }
+    })
+
+    .filter('forLoop', function() {
+        return function(input, start, end) {
+            input = new Array(end - start);
+            for (var i = 0; start < end; start++, i++) {
+                input[i] = start;
+            }
+
+            return input;
+        }
+    })
+
+    .service('Paginator', function ($rootScope) {
+        this.page = 0;
+        this.rowsPerPage = 50;
+        this.itemCount = 0;
+        this.limitPerPage = 5;
+
+        this.setPage = function (page) {
+            if (page > this.pageCount()) {
+                return;
+            }
+
+            this.page = page;
+        };
+
+        this.nextPage = function () {
+            if (this.isLastPage()) {
+                return;
+            }
+
+            this.page++;
+        };
+
+        this.perviousPage = function () {
+            if (this.isFirstPage()) {
+                return;
+            }
+
+            this.page--;
+        };
+
+        this.firstPage = function () {
+            this.page = 0;
+        };
+
+        this.lastPage = function () {
+            this.page = this.pageCount() - 1;
+        };
+
+        this.isFirstPage = function () {
+            return this.page == 0;
+        };
+
+        this.isLastPage = function () {
+            return this.page == this.pageCount() - 1;
+        };
+
+        this.pageCount = function () {
+            return Math.ceil(parseInt(this.itemCount) / parseInt(this.rowsPerPage));
+        };
+        
+        this.lowerLimit = function() { 
+            var pageCountLimitPerPageDiff = this.pageCount() - this.limitPerPage;
+            
+            if (pageCountLimitPerPageDiff < 0) { 
+                return 0; 
+            }
+            
+            if (this.page > pageCountLimitPerPageDiff + 1) { 
+                return pageCountLimitPerPageDiff; 
+            } 
+            
+            var low = this.page - (Math.ceil(this.limitPerPage/2) - 1); 
+            
+            return Math.max(low, 0);
+        };
+    })
+
+    .directive('paginator', function factory() {
+        return {
+            restrict:'E',
+            controller: function ($scope, Paginator) {
+                $scope.paginator = Paginator;
+            },
+            templateUrl: 'paginationControl.html'
+        };
+    });
+
+angular.module('examplePaginator', ['caco.ClientPaginate'])
+    .controller('TestCrtl', function ($scope) {
+        $scope.testValues = [];
+        for (var i = 0; i < 100000; i++) {
+            $scope.testValues.push(i);
+        }
+        
+        $scope.rowsPerPage = 50;
+    });
+//]]> 
+
+</script>
+
+</body>
+
+</html>
+

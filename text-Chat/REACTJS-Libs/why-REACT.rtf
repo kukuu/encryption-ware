@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red78\green78\blue78;\red255\green252\blue193;
+\red30\green88\blue187;\red239\green245\blue247;\red103\green103\blue103;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Why REACT\
+\
+https://scotch.io/tutorials/learning-react-getting-started-and-concepts\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs52 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs80 \cf2 Introduction\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 Today we are going to kick off the first installment in a new series of tutorials, 
+\b \cf2 Learning React
+\b0 \cf3 , that will focus on becoming proficient and effective with Facebook\'92s React library. Before we start building anything meaningful, its important that we cover some base concepts first, so lets get this party started.\
+\pard\pardeftab720\partightenfactor0
+
+\i \cf2 \cb4 Update 4/29/2016
+\i0 \cf3 : This article has been updated for React v15\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\b\fs54 \cf2 WHAT IS REACT?\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 React is a UI library developed at Facebook to facilitate the creation of interactive, stateful & reusable UI components. It is used at Facebook in production, and Instagram.com is written entirely in React.\
+One of it\'92s unique selling points is that not only does it perform on the client side, but it can also be rendered server side, and they can work together inter-operably.\
+It also uses a concept called the Virtual DOM that selectively renders subtrees of nodes based upon state changes. It does the least amount of DOM manipulation possible in order to keep your components up to date.\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs54 \cf2 HOW DOES THE VIRTUAL DOM WORK?\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 Imagine you had an object that you modeled around a person. It had every relevant property a person could possibly have, and mirrored the persons current state. This is basically what React does with the DOM.\
+\
+Now think about if you took that object and made some changes. Added a mustache, some sweet biceps and Steve Buscemi eyes. In React-land, when we apply these changes, two things take place. First, React runs a \'93diffing\'94 algorithm, which identifies what has changed. The second step is reconciliation, where it updates the DOM with the results of diff.\
+The way React works, rather than taking the real person and rebuilding them from the ground up, it would only change the face and the arms. This means that if you had text in an input and a render took place, as long as the input\'92s parent node wasn\'92t scheduled for reconciliation, the text would stay undisturbed.\
+\
+Because React is using a fake DOM and not a real one, it also opens up a fun new possibility. We can render that fake DOM on the server, and boom, server side React views.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs54 \cf2 PROPS\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 When we use our defined components, we can add attributes called props. These attributes are available in our component as 
+\f1\fs30 \cf5 \cb6 this.props
+\f0\fs38 \cf3 \cb1  and can be used in our render method to render dynamic data:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs80 \cf2 Specs, Lifecycle & State\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 The 
+\f1\fs30 \cf5 \cb6 render
+\f0\fs38 \cf3 \cb1  method is the only required spec for creating a component, but there are several lifecycle methods & specs we can use that are mighty helpful when you actually want your component to do anything.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs54 \cf2 LIFECYCLE METHODS\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri1377\sa997\partightenfactor0
+\ls1\ilvl0
+\fs38 \cf7 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+componentWillMount
+\b0  \'96 Invoked once, on both client & server before rendering occurs.\
+\ls1\ilvl0
+\b \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+componentDidMount
+\b0  \'96 Invoked once, only on the client, after rendering occurs.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri1377\sa997\partightenfactor0
+\ls1\ilvl0
+\b \cf7 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+shouldComponentUpdate
+\b0  \'96 Return value determines whether component should update.\
+\ls1\ilvl0
+\b \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+componentWillUnmount
+\b0  \'96 Invoked prior to unmounting component.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri1377\sa997\partightenfactor0
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 		
+\b\fs54 \cf2 \expnd0\expndtw0\kerning0
+SPECS\
+\ls1\ilvl0
+\fs38 \cf7 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+getInitialState
+\b0  \'96 Return value is the initial value for state.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri1377\sa997\partightenfactor0
+\ls1\ilvl0
+\b \cf7 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+getDefaultProps
+\b0  \'96 Sets fallback props values if props aren\'92t supplied.\
+\ls1\ilvl0
+\b \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+mixins
+\b0  \'96 An array of objects, used to extend the current component\'92s functionality.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri1377\sa997\partightenfactor0
+\ls1\ilvl0\cf7 \kerning1\expnd0\expndtw0 		
+\b\fs54 \cf2 \expnd0\expndtw0\kerning0
+STATE\
+\ls1\ilvl0
+\b0\fs38 \cf3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Every component has a 
+\f1\fs30 \cf5 \cb6 state
+\f0\fs38 \cf3 \cb1  object and a 
+\f1\fs30 \cf5 \cb6 props
+\f0\fs38 \cf3 \cb1  object. State is set using the 
+\f1\fs30 \cf5 \cb6 setState
+\f0\fs38 \cf3 \cb1  method. Calling 
+\f1\fs30 \cf5 \cb6 setState
+\f0\fs38 \cf3 \cb1  triggers UI updates and is the bread and butter of React\'92s interactivity. If we want to set an initial state before any interaction occurs we can use the 
+\f1\fs30 \cf5 \cb6 getInitialState
+\f0\fs38 \cf3 \cb1  method. Below, see how we can set our component\'92s state:\
+\ls1\ilvl0
+\b\fs80 \cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Events\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs38 \cf3 React also has a built in cross browser events system. The events are attached as properties of components and can trigger methods. Lets make our count increment below using events:\cf7 \
+}

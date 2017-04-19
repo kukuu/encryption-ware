@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UF-8">
+		<title> Alexander Adu-Sarkodie </title>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+		<style type='text/css'>
+			#imagewrap img {padding:0 10px 10px 0;}
+			h1{color:green;}
+		</style>
+
+		<script type='text/javascript'>
+
+			$(window).load(function(){
+				$(document).ready(function(){
+					//Set up Mock Data
+
+					var data = '[{"data1":"Name","data2":"Fixed Saver","data3":"Interest Rate","data4":"2.20%","data5":"Minimum Deposit","data6":"&pound;500","data7":"Interest Type","data8":"Fixed"},{"data1":"Name","data2":"Flex Saver","data3":"Interest Rate","data4":"1.50%","data5":"Minimum Deposit","data6":"&pound;0","data7":"Interest Type","data8":"Tracker"},{"data1":"Name","data2":"Offset Saver","data3":"Interest Rate","data4":"1.80%","data5":"Minimum Deposit","data6":"&pound;1000","data7":"Interest Type","data8":"Fixed"}]';
+
+					var obj = $.parseJSON(data);
+					$.each(obj, function(index, item) {
+						$('#imagewrap').append(item.data1 + ":"+ item.data2 + '<br />' + item.data3 + ":"+ item.data4 +'<br />' + item.data5 + ":"+ item.data6 + '<br />' + item.data7 + ":"+ item.data8 + '<hr />');
+					});
+				})
+			})
+
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<h1>Lloyds Savings</h1>
+		<div id="imagewrap"></div>
+
+	</body>
+
+</html>
