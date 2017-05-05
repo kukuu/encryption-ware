@@ -1,5 +1,5 @@
 # node-dc-mongo
-<h2>Source code for the project demonstrating data visualization using d3.js, dc.js, node.js and mongodb<h2><br/>
+<h2>Source code demonstrates data visualization using d3.js, dc.js, node.js and mongodb<h2><br/>
 
 <!--For the full post please visit: <br/>
 <h2>https://anmolkoul.wordpress.com/2015/06/05/interactive-data-visualization-using-d3-js-dc-js-nodejs-and-mongodb</h2>-->
