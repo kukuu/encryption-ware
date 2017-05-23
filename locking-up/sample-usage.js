@@ -21,7 +21,7 @@ testUser.save(function(err) {
     if (err) throw err;
 
     // attempt to authenticate user
-    User.getAuthenticated('jmar777', 'Password123', function(err, user, reason) {
+    User.getAuthenticated('jmar777', 'Password123789', function(err, user, reason) {
         if (err) throw err;
 
         // login was successful if we have a user
