@@ -44,7 +44,7 @@ When server starts running, then
 It will automatically open the chrome browser and will open the website. When ever you change any code, it will 
 compile automatically and refresh the page.
 
-When you run the app on the brower, the output would be 
+When you run the app on the browser, the output would be 
 
 ![Alt text](https://raw.githubusercontent.com/amir-saeed/ReactJs/master/Show-bootstrap-modal-on-button-click/output.png?raw=true "Bootstrap modal")
 
