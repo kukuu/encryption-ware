@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/webpack-dev-server --content-base client/src",
     "start": "node_modules/.bin/webpack-dev-server --progress --inline --hot --open"
   },
-  "author": "Amir Saeed",
+  "author": "Alexander Adu-Sarkodie",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.0",
