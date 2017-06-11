@@ -41,6 +41,9 @@ app.post('/api/comments', function(req, res) {
     // some other approach (e.g. UUIDs) to ensure a globally unique id. We'll
     // treat Date.now() as unique-enough for our purposes.
     var newComment = {
+      //Author ID
+      //Author name
+      //Author post
       id: Date.now(),
       author: req.body.author,
       text: req.body.text,
