@@ -45,6 +45,7 @@ UserSchema.methods.comparePassword = function(candidatePassword, cb) {
 };
 
 module.exports = mongoose.model('User', UserSchema);
+
 As can be seen, there's not much too it - we hash passwords before documents are saved to MongoDB, and we provide a basic convenience method for comparing passwords later on.
 
 Why do we Need Account Locking?
@@ -82,7 +83,7 @@ The provided password was incorrect
 The maximum number of login attempts has been exceeded
 Any other reason for a failed login will simply be an error scenario. To describe these reasons, we're going to kick it old school with a faux-enum:
 
-// expose enum on the model
+// expose enum on the model. Assign numerical values to them
 UserSchema.statics.failedLogin = {
     NOT_FOUND: 0,
     PASSWORD_INCORRECT: 1,
