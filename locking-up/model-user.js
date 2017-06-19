@@ -29,15 +29,21 @@ UserSchema.pre('save', function(next) {
     var user = this;
 
     // only hash the password if it has been modified (or is new)
-    if (!user.isModified('password')) return next();
+    if (!user.isModified('password')) {
+        return next();
+    }
 
     // generate a salt key
     bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt) {
-        if (err) return next(err);
+        if (err) {
+            return next(err);
+        }
 
         // hash the password using our new salt
         bcrypt.hash(user.password, salt, function (err, hash) {
-            if (err) return next(err);
+            if (err) {
+                return next(err);
+            }
 
             // set the hashed password back on our user document
             user.password = hash;
@@ -48,7 +54,9 @@ UserSchema.pre('save', function(next) {
 
 UserSchema.methods.comparePassword = function(candidatePassword, cb) {
     bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
-        if (err) return cb(err);
+        if (err) {
+            return cb(err);
+        }
         cb(null, isMatch);
     });
 };
@@ -79,7 +87,9 @@ var reasons = UserSchema.statics.failedLogin = {
 
 UserSchema.statics.getAuthenticated = function(username, password, cb) {
     this.findOne({ username: username }, function(err, user) {
-        if (err) return cb(err);
+        if (err) {
+            return cb(err);
+        }
 
         // make sure the user exists
         if (!user) {
@@ -97,7 +107,9 @@ UserSchema.statics.getAuthenticated = function(username, password, cb) {
 
         // test for a matching password
         user.comparePassword(password, function(err, isMatch) {
-            if (err) return cb(err);
+            if (err) { 
+                return cb(err);
+            }
 
             // check if the password was a match
             if (isMatch) {
@@ -109,14 +121,18 @@ UserSchema.statics.getAuthenticated = function(username, password, cb) {
                     $unset: { lockUntil: 1 }
                 };
                 return user.update(updates, function(err) {
-                    if (err) return cb(err);
+                    if (err) {
+                        return cb(err);
+                    }
                     return cb(null, user);
                 });
             }
 
             // password is incorrect, so increment login attempts before responding
             user.incLoginAttempts(function(err) {
-                if (err) return cb(err);
+                if (err) {
+                    return cb(err);
+                }
                 return cb(null, null, reasons.PASSWORD_INCORRECT);
             });
         });
