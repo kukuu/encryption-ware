@@ -7,8 +7,13 @@ This is single page application to showing how to validate from the  client as w
 2. Node
 3. Express
 4. MongoDB / Robomongo
-5. Bootstrap
-6. HTML / CSS3
+5. Passport
+6. Bcrypt
+7. JWT
+8. Bootstrap
+9. HTML / CSS3
+
+
 
 ## Instructions to run
 
@@ -69,4 +74,4 @@ When you submit correct email and password, system will take you to dashboard
 
 
 ### Dependencies
-This project use Babel, webpack, react, react-dom, react-router and bootstrap, jquery
+This project uses NodeJS, Express, Mongoose, Bcrypt, JWT, Babel, webpack, react, react-dom, react-router, MongoDB, Passport and bootstrap
