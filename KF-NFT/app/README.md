@@ -12,9 +12,9 @@ This is single page application to showing how to validate from the  client as w
 7. RESTful API
 8. Axios
 9. GraphQL 
-10. Charting & Visualization - D3, DC, Highcharts, kibana
+10. Charting & Visualization - D3, DC, Highcharts, Kibana
 11. MongoDB / Robomongo
-12. Secure Authentication, OAuth & 2FA)
+12. Secure Authentication, OAuth & 2FA
 13. Apache, ActiveMQ (for Messaging)
 14. STOMP (JAVA environment), HornetQ, SPRING,
 15. Passport
