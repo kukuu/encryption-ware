@@ -57,15 +57,15 @@ function validate(values) {
 	const errors {};
 
 	if(!values.title) {
-		errors.title = 'Entet title';
+		errors.title = 'Enter title';
 	}
 
 	if(!values.categories) {
-		errors.categories = 'Entet categories';
+		errors.categories = 'Enter categories';
 	}
 
 	if(!values.content) {
-		errors.content = 'Entet content';
+		errors.content = 'Enter content';
 	}
 
 	return errors;
