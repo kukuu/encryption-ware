@@ -2,16 +2,34 @@
 ## Introduction
 This is single page application to showing how to validate from the  client as well as server side. Fetch IP address of the local user, display it and after sucessful login, redirect user to dashboard, otherwise, show error message.
 
-## Technologies used
-1. React / React-dom / React-router
-2. Node
-3. Express
-4. MongoDB / Robomongo
-5. Passport
-6. Bcrypt
-7. JWT
-8. Bootstrap
-9. HTML / CSS3
+## Technologies 
+1. JavaScript 
+2. Typescript
+3. NodeJS
+4. Express 
+5. React / React-dom / React-router /React Transition 
+6. Redux
+7. RESTful API
+8. Axios
+9. GraphQL 
+10. Charting & Visualization - D3, DC, Highcharts, kibana
+11. MongoDB / Robomongo
+12. Secure Authentication, OAuth & 2FA)
+13. Apache, ActiveMQ (for Messaging)
+14. STOMP (JAVA environment), HornetQ, SPRING,
+15. Passport
+16. Bcrypt
+17. JWT
+18. Bootstrap
+19. HTML5 / CSS3
+20. Websocket (socket.io)
+21. SASS/LESS
+22. Mobile First, Responsive Design, Reactive Design, Adaptive Design
+23. Accessibility/Usability
+24. TDD
+25. BDD
+26. Continuous Development / Microservices
+
 
 
 
