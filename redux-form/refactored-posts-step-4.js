@@ -43,37 +43,40 @@ class PostsNew extends Component {
 	onSubmit(props) {
 		alert('Post Submitted');//test
 	}
+	//create a function to build re-usable dynamic template for the view content area of the form
+	//We call it renderField. 
+	//the 2 signatures are a type and field in the context here
+
+	renderField(fieldConfig, field) {
+
+		//We call on redux-form fieldHelber object
+		//used for dynamic checking using props to check for each  field of the  fieldConfig type and map onto the content for it
+		//and to help evaluate appropriate errors.
+		const fieldHelper = this.props.fields[field];
+
+		//return the dynamic view template. This is a high order component
+		return(
+			<div className={`form-group ${fieldHelper.touched && fieldHelper.invalid ? 'has-danger' : '' }`}>
+				<label>{fieldConfig.label}</label>
+				<fieldConfig.type type="text" className="form-control"  {...fieldHelper} />
+				<div className="text-help">
+					{fieldHelper.touched ? fieldHelper.error : ''}
+				</div>	
+			</div>
+		)
+	}
+
 
 	render(){
-		const { fields: { title, category, content}, handleSubmit} = this.props; //field lables and action(s). Stateless.
+		const { fields: { handleSubmit } = this.props; //field lables and action(s). Stateless. title, categories and content have been removed
 
 		//form with interpolation
 		return (
 			<form onSubmit={handleSubmit(props => this.onSubmit(props))} >
 				<h3>Create A New post</h3>
-				<div className={`form-group ${title.touched && title.invalid ? 'has-danger' : '' }`}>
-					<label>Title</label>
-					<input type="text" className="form-control"  {...title} />
-					<div className="text-help">
-						{title.touched ? title.error : ''}
-					</div>
-				</div>
 
-				<div className={`form-group ${categories.touched && categories.invalid ? 'has-danger' : '' }`}>
-					<label>Categories</label>
-					<input type="text" className="form-control"  {...categories} />
-					<div className="text-help">
-						{categories.touched ? categories.error : ''}
-					</div>
-				</div>
-
-				<div className={`form-group ${content.touched && content.invalid ? 'has-danger' : '' }`}>
-					<label>Content</label>
-					<input type="text" className="form-control"  {...content} />
-					<div className="text-help">
-						{content.touched ? content.error : ''}
-					</div>
-				</div>
+				<!--Replace with reference to HOC (renderField):: Use _.map()-->
+					{_.map(FIELDS, this.renderField.bind(this))}
 
 				<button type="submit" className="btn btn-primary">Submit</button>
 				<Link to="/" className="btn-danger">Cancel</Link>
@@ -86,7 +89,16 @@ class PostsNew extends Component {
 function validate(values) {
 	const errors {};
 
-	if(!values.title) {
+	//Use lodash. each function to loop throughthe configuration object with TYPES
+	_.each(FIELDS,(type, field)) => {
+
+		//check the array of fields on each instance signature (values)
+		if(!values[field]) {
+			errors[field] = `Enter a ${field}`
+		}
+	}
+
+	/*if(!values.title) {
 		errors.title = 'Enter title';
 	}
 
@@ -96,7 +108,7 @@ function validate(values) {
 
 	if(!values.content) {
 		errors.content = 'Enter content';
-	}
+	}*/
 
 	return errors;
 }

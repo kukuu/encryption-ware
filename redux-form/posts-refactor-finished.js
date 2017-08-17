@@ -9,12 +9,10 @@ import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
 import { Link } from 'react-router';
 
-//Taken from fields key  here:: export default reduxForm()
-// Further we create a configuration object for fields
-//Fabricate the attay into object
+
 // values will be string
 //const FIELDS = ['title','categories','content']
-//the FIELDS configuraion will have TYPES related to the fields in the form
+//the FIELDS configuraion will have TYPES (title,categories,content) related to the fields in the form
 //The TYPES will be the names in the fields
 //Each TYPE is an object with key/value pairs
 
@@ -44,36 +42,37 @@ class PostsNew extends Component {
 		alert('Post Submitted');//test
 	}
 
+	//create a function to build re-usable dynamic template for the view content area of the form
+	//the 2 signatures are a type (fieldConfig- maps on to each FIELDS config type object) and field in it's context
+
+	renderField(fieldConfig, field) {
+
+		//We call on redux-form fieldHelber object.This will help with stepping through error with each field instance
+		const fieldHelper = this.props.fields[field];
+
+		//return the dynamic view template. This is a high order component
+		return(
+			<div className={`form-group ${fieldHelper.touched && fieldHelper.invalid ? 'has-danger' : '' }`}>
+				<label>{fieldConfig.label}</label>
+				<fieldConfig.type type="text" className="form-control"  {...fieldHelper} />
+				<div className="text-help">
+					{fieldHelper.touched ? fieldHelper.error : ''}
+				</div>	
+			</div>
+		)
+	}
+
+
 	render(){
-		const { fields: { title, category, content}, handleSubmit} = this.props; //field lables and action(s). Stateless.
+		const { fields: { handleSubmit } = this.props; //field lables and action(s). Stateless. title, categories and content have been removed
 
 		//form with interpolation
 		return (
 			<form onSubmit={handleSubmit(props => this.onSubmit(props))} >
 				<h3>Create A New post</h3>
-				<div className={`form-group ${title.touched && title.invalid ? 'has-danger' : '' }`}>
-					<label>Title</label>
-					<input type="text" className="form-control"  {...title} />
-					<div className="text-help">
-						{title.touched ? title.error : ''}
-					</div>
-				</div>
 
-				<div className={`form-group ${categories.touched && categories.invalid ? 'has-danger' : '' }`}>
-					<label>Categories</label>
-					<input type="text" className="form-control"  {...categories} />
-					<div className="text-help">
-						{categories.touched ? categories.error : ''}
-					</div>
-				</div>
-
-				<div className={`form-group ${content.touched && content.invalid ? 'has-danger' : '' }`}>
-					<label>Content</label>
-					<input type="text" className="form-control"  {...content} />
-					<div className="text-help">
-						{content.touched ? content.error : ''}
-					</div>
-				</div>
+				<!--Replace with reference to HOC (renderField):: Use _.map()-->
+					{_.map(FIELDS, this.renderField.bind(this))}
 
 				<button type="submit" className="btn btn-primary">Submit</button>
 				<Link to="/" className="btn-danger">Cancel</Link>
@@ -95,18 +94,6 @@ function validate(values) {
 		}
 	}
 
-	/*if(!values.title) {
-		errors.title = 'Enter title';
-	}
-
-	if(!values.categories) {
-		errors.categories = 'Enter categories';
-	}
-
-	if(!values.content) {
-		errors.content = 'Enter content';
-	}*/
-
 	return errors;
 }
 
@@ -114,8 +101,7 @@ function validate(values) {
 //Migrating to global scope
 export default reduxForm({
 	form: 'PostsNews',
-	//fields: ['title', 'categories', 'content'],
-	//Enter the magic of lodash
+	//Enter the magic of lodash to inject the fields array
 	fields: _.keys(FIELDS),
 	validate
 })(PostsNews);

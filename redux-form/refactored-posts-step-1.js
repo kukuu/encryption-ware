@@ -1,10 +1,10 @@
 //Author Alexander Adu-Sarkodie
-//TODO: Refactor form with HOC and loadash, and listoption methods
+//TODO: Refactor form with HOC and lodash, and listoption methods
 	//Create a config object of types, mapping the controllers
 	// create an object dependencies for the types
 	//Use redux Form Helper methods to pass object types and drill down to leaf nodes
 
-import _ from 'loadash';
+import _ from 'lodash';
 import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
 import { Link } from 'react-router';
