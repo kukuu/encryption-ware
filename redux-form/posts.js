@@ -3,7 +3,7 @@
 	//Create a config object of types, mapping the controllers
 	// create an object dependencies for the types
 	//Use redux Form Helper methods to pass object types and drill down to leaf nodes
-import react, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
 import { Link } from 'react-router';
 
@@ -52,7 +52,7 @@ class PostsNew extends Component {
 	}
 }
 
-//Validating fuunction
+//Validating fuuction
 function validate(values) {
 	const errors {};
 
