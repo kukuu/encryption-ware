@@ -25,12 +25,12 @@ const FIELDS = {
 
 	categories: {
 		type: 'input',
-		title: 'Enter some categories for this post'
+		label: 'Enter some categories for this post'
 	},
 
 	content: {
 		type: 'textarea',
-		title: 'Post Contents'
+		label: 'Post Contents'
 	}
 
 };

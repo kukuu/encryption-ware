@@ -11,7 +11,7 @@ import { Link } from 'react-router';
 
 //Taken from fields key  here:: export default reduxForm()
 // Further we create a configuration object for fields
-//Fabricate the attay into object
+//Fabricate the array into object
 // values will be string
 //const FIELDS = ['title','categories','content']
 //the FIELDS configuraion will have TYPES related to the fields in the form
@@ -27,12 +27,12 @@ const FIELDS = {
 
 	categories: {
 		type: 'input',
-		title: 'Enter some categories for this post'
+		label: 'Enter some categories for this post'
 	},
 
 	content: {
 		type: 'textarea',
-		title: 'Post Contents'
+		label: 'Post Contents'
 	}
 
 };
