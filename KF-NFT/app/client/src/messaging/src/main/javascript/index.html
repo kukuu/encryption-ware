@@ -4,6 +4,14 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<script src="js/stomp.js"></script>
 		<script type="text/javascript">
+			/*
+			•••••••••••••••••••
+			3 stage process
+			•••••••••••••••••••
+				i. Build a STOMP client (middleware for messaging - protocol)
+				ii. Connect STOMP client to ActiveMQ Broker
+				iii. Connect ActiveMQ Broker to WebSocket
+			*/
 
 			//Handshaking with ActiveMQ and Stomp
 			var client = Stomp.client( "ws://localhost:61614/stomp", "v11.stomp" );
@@ -12,7 +20,10 @@
 			    destination: '/queue/test_stomp',
 			    ack: 'client',
 			};
-
+			
+			//connect stomp over activeMQ 
+			//Requires:: username/password/callback function which sets subscription to a TOPIC with priority
+			//Is important communication pipeline is disconnected once is over
 			client.connect( "admin", "admin",
 				function() {
 
