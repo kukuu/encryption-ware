@@ -4,7 +4,7 @@ const passport = require('passport');
 const config = require('../config');
 const path = require('path');
 
-// connect to the database and load models
+// sync model with db 
 require('./models').connect(config.dbUri);
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // pass the passport middleware
 app.use(passport.initialize());
 
-// load passport strategies
+// load passport strategies for valiating registration and sign in
 const localSignupStrategy = require('./passport/local-signup');
 const localLoginStrategy = require('./passport/local-login');
 passport.use('local-signup', localSignupStrategy);
@@ -27,10 +27,11 @@ passport.use('local-login', localLoginStrategy);
 const authCheckMiddleware = require('./middleware/auth-check');
 app.use('/api', authCheckMiddleware);
 
-// routes
+// build routes
 const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
 
+//Attach routes to Authentication and API
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
